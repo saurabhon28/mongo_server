@@ -1,0 +1,13 @@
+GET http://localhost:3000/listingsAndReviews?page=5
+
+###
+GET http://localhost:3000/listings/64d60ac420f0d7b64b28b2b1
+
+###
+POST http://localhost:3000/listingsAndReviews
+Content-Type: application/json
+
+{
+    "name": "Hello is anybody here!!!"
+   
+}

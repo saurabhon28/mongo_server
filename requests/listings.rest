@@ -1,0 +1,54 @@
+GET http://localhost:3000/listings
+
+###
+
+GET http://localhost:3000/listings?minPrice=1500
+
+###
+GET http://localhost:3000/listings/64d60ac420f0d7b64b28b2b1
+
+###
+POST http://localhost:3000/listings/
+Content-Type: application/json
+
+{
+    "name": "Sanjay stay",
+    "price": 4000,
+    "description": "Wonderful place to stay with delicious food",
+    "currency": "INR"
+}
+
+###
+
+PUT http://localhost:3000/listings/64d60bfb20f0d7b64b28b2b8
+Content-Type: application/json
+
+{
+    "name": "Satyam stay",
+    "price": 3800,
+    "description": "Marvelous place to stay with delicious food",
+    "currency": "INR"
+}
+
+###
+
+PATCH http://localhost:3000/listings/64d60bfb20f0d7b64b28b2b8
+Content-Type: application/json
+
+{
+    "price": 4500,
+    "currency": "EUR"
+}
+
+###
+
+DELETE http://localhost:3000/listings/64d60bfb20f0d7b64b28b2b8
+Content-Type: application/json
+
+{
+    "name": "Satyam stay",
+    "price": 3800,
+    "description": "Marvelous place to stay with delicious food",
+    "currency": "INR"
+}
+
